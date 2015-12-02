@@ -1,0 +1,59 @@
+h3 {
+  text-align: center;
+  color:#fff;
+}
+
+.task-list {
+  max-width: 260px;
+  min-height: 300px;
+  margin: 10px 0px;
+  padding: 5px;
+  background-color: #32c5d2;
+  border-radius: 10px;
+}
+
+.task-list input, .task-list textarea {
+  width: 100%;
+  height: 30px;
+  display: block;
+  margin: 5px auto;
+}
+
+#delete {
+  width: 100%;
+  background-color: #fff;
+  border: 2px dotted #000;
+  border-radius: 5px;
+  margin: 10px auto;
+  height: 75px;
+  line-height: 80px;
+  text-align: center;
+}
+
+#delete span{
+  font-size: 24px;
+}
+
+.todo-task {
+  max-width: 240px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px;
+  line-height: 24px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 16px;
+  font-style: italic;
+  color:#a4a4a5;
+}
+
+.description {
+  font-size: 18px;
+}
