@@ -5,6 +5,7 @@
 	<title>To Do List</title>
 	<link rel="stylesheet" href="stylesheets/main.css">
 	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" href="stylesheets/jquery-ui.min.css">
 </head>
 <body>
 
@@ -52,7 +53,14 @@
 		</div>
 	</div>
 
+	<script src="script/jquery-1.11.3.min.js"></script>
+	<script src="script/jquery-ui.min.js"></script>
 	<script src="script/main.js"></script>
+
+	<script>
+   $("#date").datepicker();
+   $("#date").datepicker("option", "dateFormat", "yy-mm-dd");
+	</script>
 
 </body>
 </html>
