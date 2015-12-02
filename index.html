@@ -6,49 +6,59 @@
 	<link rel="stylesheet" href="stylesheets/main.css">
 	<link rel="stylesheet" href="stylesheets/bootstrap.css">
 	<link rel="stylesheet" href="stylesheets/jquery-ui.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
-<body>
+<body style="background-color: #38454B">
+
+	<div class="container" id="box">
+		<div class="row">
+
+				<header>
+					<h3>To Do List</h3>
+				</header>
+
+
+				<div class="col-md-3 col-sm-6">
+					<div class="task-list" id="pending">
+					  <h3><i class="fa fa-external-link-square"></i>Pending</h3>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="task-list" id="doing">
+					  <h3><i class="fa fa-pencil-square"></i>Doing</h3>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="task-list" id="done">
+					  <h3><i class="fa fa-check-square"></i>Done</h3>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="task-list">
+					  <h3><i class="fa fa-plus-square"></i>Add a task</h3>
+
+					  <form id="todo-form">
+				    	<input type="text" placeholder="標題" id="title" />
+				    	<input type="text" placeholder="時間" id="date"/>
+				    	<textarea placeholder="內容" id="description"></textarea>
+				    	<input class="btn btn-success" type="button" value="新增" id="add" />
+				    	<input class="btn btn-warning" type="button" value="重填" id="clear"/>
+				  	</form>
+
+				  	<div id="delete"><span class="glyphicon glyphicon-trash" aria-hidden="true"></div>
+					</div>
+				</div>
+
+		</div>
+	</div>
 
 	<div class="container">
 		<div class="row">
-
-			<div class="col-md-3">
-				<div class="task-list" id="pending">
-				  <h3>Pending</h3>
-				  <div class="todo-task">
-				  	<div class="header">標題</div>
-				  	<div class="date">日期</div>
-				  	<div class="description">內容</div>
-				  </div>	
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="task-list" id="doing">
-				  <h3>Doing</h3>
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="task-list" id="done">
-				  <h3>Done</h3>
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<div class="task-list">
-				  <h3>Add a task</h3>
-
-				  <form id="todo-form">
-			    	<input type="text" placeholder="標題" id="title" />
-			    	<input type="text" placeholder="時間" id="date"/>
-			    	<textarea placeholder="內容" id="description"></textarea>
-			    	<input type="button" value="新增" id="add" />
-			    	<input type="button" value="重填" id="clear"/>
-			  	</form>
-
-			  	<div id="delete"><span class="glyphicon glyphicon-trash" aria-hidden="true"></div>
-				</div>
+			<div class=" col-md-offset-11 col-md-1" id="download">
+				<button class="btn btn-primary">Download on Github</button>
 			</div>
 		</div>
 	</div>
